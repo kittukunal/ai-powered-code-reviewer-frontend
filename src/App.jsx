@@ -13,7 +13,7 @@ function App() {
     setResponse("");
 
     try {
-      const res = await axios.post("http://localhost:3000/get-review", { code: input });
+      const res = await axios.post("https://ai-powered-code-reviewer-backend-1.onrender.com/get-review", { code: input });
       setResponse(res.data.response);
     } catch (err) {
       console.log("❌ Error:", err);
